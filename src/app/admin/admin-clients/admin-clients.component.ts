@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IClient } from 'src/app/shared/interfaces/clients.interface';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { ClientsService } from 'src/app/shared/services/clients.service';
 
 @Component({
   selector: 'app-admin-clients',
@@ -15,7 +16,8 @@ export class AdminClientsComponent implements OnInit {
   email: string;
   message: string;
 
-  constructor(private firestore: AngularFirestore) {
+  constructor(private firestore: AngularFirestore,
+              private clientsService: ClientsService) {
     this.getClients();
    }
 
@@ -23,7 +25,7 @@ export class AdminClientsComponent implements OnInit {
   }
 
   public getClients() {
-    this.firestore.collection('clients').snapshotChanges().subscribe(
+    this.clientsService.getCln().subscribe(
       arrayClients => {
         this.clients = arrayClients.map(client => {
           return {

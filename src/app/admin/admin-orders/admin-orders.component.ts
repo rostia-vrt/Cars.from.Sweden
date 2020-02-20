@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { IOrder } from 'src/app/shared/interfaces/orders.interface';
+import { OrdersService } from 'src/app/shared/services/orders.service';
 
 @Component({
   selector: 'app-admin-orders',
@@ -9,7 +10,8 @@ import { IOrder } from 'src/app/shared/interfaces/orders.interface';
 })
 export class AdminOrdersComponent implements OnInit {
   orders: Array<IOrder>;
-  constructor(private firestore: AngularFirestore) {
+  constructor(private firestore: AngularFirestore,
+              private ordersService: OrdersService) {
     this.getOrders();
    }
 
@@ -17,7 +19,7 @@ export class AdminOrdersComponent implements OnInit {
   }
 
   public getOrders() {
-    this.firestore.collection('orders').snapshotChanges().subscribe(
+    this.ordersService.getOrd().subscribe(
       arrayOrders => {
         this.orders = arrayOrders.map(order => {
           return {

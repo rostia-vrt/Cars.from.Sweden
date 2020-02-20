@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireUploadTask, AngularFireStorage, AngularFireStorageReference } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import { finalize, map } from 'rxjs/operators';
+import { ProductsService } from 'src/app/shared/services/products.service';
 import { IProduct } from 'src/app/shared/interfaces/products.interface';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { NgForm } from '@angular/forms';
@@ -15,6 +16,7 @@ export class AdminProductsComponent implements OnInit {
 
   constructor(
     private prStorage: AngularFireStorage,
+    private productsService: ProductsService,
     private firestore: AngularFirestore
   ) {
     this.getProducts();
@@ -47,7 +49,7 @@ export class AdminProductsComponent implements OnInit {
   }
 
   public getProducts() {
-    this.firestore.collection('products').snapshotChanges().subscribe(
+    this.productsService.getProducts().subscribe(
       arrayProducts => {
         this.products = arrayProducts.map(product => {
           return {

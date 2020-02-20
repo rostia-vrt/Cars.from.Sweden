@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/shared/interfaces/products.interface';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { ProductsService } from 'src/app/shared/services/products.service';
 
 @Component({
   selector: 'app-catalog',
@@ -9,7 +10,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class CatalogComponent implements OnInit {
   products: Array<IProduct>;
-  constructor(private firestore: AngularFirestore) {
+  constructor(private firestore: AngularFirestore,
+              private productsService: ProductsService) {
     this.getProducts();
    }
 
@@ -17,7 +19,7 @@ export class CatalogComponent implements OnInit {
   }
 
   public getProducts() {
-    this.firestore.collection('products').snapshotChanges().subscribe(
+    this.productsService.getProducts().subscribe(
       arrayProducts => {
         this.products = arrayProducts.map(product => {
           return {
