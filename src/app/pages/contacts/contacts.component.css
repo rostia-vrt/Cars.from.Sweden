@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+  min-height: 600px;
+}
+
+.containerTop {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 600px;
+  padding: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+}
+
+.containerLeft {
+  width: 50%;
+  min-height: 540;
+}
+
+.leftContUpTitle {
+  font-size: 20px;
+  width: 100%;
+  height: 25px;
+}
+
+.leftContBottomTitle {
+  font-size: 20px;
+  width: 100%;
+  height: 25px;
+}
+
+.contactInfo {
+  width: 100%;
+  min-height: 240px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.imgBox {
+  float: left;
+  margin-right: 15px;
+}
+
+.address {
+  width: 100%;
+  min-height: 80px;
+}
+
+.phoneNumber {
+  width: 100%;
+  min-height: 80px;
+}
+
+.Email {
+  width: 100%;
+  min-height: 80px;
+}
+
+.contactText {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.workTime {
+  padding-top: 15px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.timeText {
+  font-size: 20px;
+}
+
+.spanText {
+  margin-right: 30px;
+}
+
+.containerRight {
+  width: 50%;
+  min-height: 540;
+}
+
+.rightContUpTitle {
+  font-size: 20px;
+  width: 100%;
+  height: 25px;
+}
+
+.spn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+input {
+  height: 35px;
+  font-size: 25px;
+}
+
+.bottomContainer {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width:840px) {
+
+    .containerTop{
+        flex-direction: column;
+    }
+    .containerLeft{
+        width: 100%;
+    }
+    .containerRight{
+        width: 100%;
+    }
+
+}

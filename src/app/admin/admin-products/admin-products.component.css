@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  .carContainer {
+    width: 90%;
+    min-height: 600px;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .info {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 200px;
+  }
+  
+  .titleInfo {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .titleText {
+    font-size: 20px;
+  }
+  
+  .cars {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 450px;
+  }
+  
+  .carsTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .CarBox {
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px darkslategray;
+    margin-top: 60px;
+  }
+  
+  .MainImg {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .MainImg:hover{
+    cursor: pointer;
+  }
+  
+  .CarInfoBox {
+    width: 100%;
+    min-height: 225px;
+  }
+  
+  .infoBoxTitle {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .table {
+    width: 100%;
+    min-height: 225px;
+  }
+  
+  .option_first {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .option_second {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .spec {
+    font-size: 15px;
+  }
+  
+  .price {
+    width: 20%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .priceNew {
+    display: none;
+  }
+  
+  .spanPrice {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .money {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+  }
+  
+  .containerSoldCars {
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  .SoldCarsBox {
+    width: 1300px;
+    min-height: 600px;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .soldCarsTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .edit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .delete{
+    margin-bottom: 10px;
+  }
+  .soldLabel{
+    font-size: 20px;
+  }

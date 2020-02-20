@@ -1,0 +1,139 @@
+<div class="container d-flex justify-content-center">
+  <div class="zakazBox d-flex flex-column">
+    <p class="titleZakaz">Для оформлення замовлення будь ласка заповніть нижче наведену форму</p>
+    <form action="" #form='ngForm' autocomplete="off" (submit)="onSubmit(form)">
+      <div class="formBody d-flex">
+        <div class="formBodyLeft">
+          <div class="form-group">
+            <label class="formLabel" for="formGroupNameInput">Ваше Ім'я *</label>
+            <input type="text" class="form-control" [(ngModel)]="name" name="name" id="formGroupNameInput"
+              placeholder="Введіть Ім'я...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="formGroupPhoneNumberInput">Номер телефону *</label>
+            <input type="text" class="form-control" [(ngModel)]="phoneNumber" name="phoneNumber"
+              id="formGroupPhoneNumberInput" placeholder="Введіть номер тел...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="">Автомобіль *</label>
+            <table>
+              <thead>
+                <tr>
+                  <th>Марка:</th>
+                  <th>Модель:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="text" [(ngModel)]="brand" name="brand" class="form-control" placeholder="Введіть марку авто...">
+                  </td>
+                  <td>
+                    <input type="text" [(ngModel)]="model" name="model" class="form-control" placeholder="Введіть модель авто...">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="year">Рік випуску *</label>
+            <input type="text" class="form-control" [(ngModel)]="year" name="year" id="year" placeholder="2009 - 2012...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="inputState">Пробіг *</label>
+            <select id="inputState" [(ngModel)]="probig" name="probig" class="form-control">
+              <option>Виберіть пробіг...</option>
+              <option>5 000 км</option>
+              <option>10 000 км</option>
+              <option>25 000 км</option>
+              <option>50 000 км</option>
+              <option>100 000 км</option>
+              <option>125 000 км</option>
+              <option>150 000 км</option>
+              <option>175 000 км</option>
+              <option>200 000 км</option>
+              <option>250 000 км</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="price">Бюджет на авто *</label>
+            <input type="text" [(ngModel)]="price" name="price" class="form-control" id="price" placeholder="USD $...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="interior">Салон *</label>
+            <select id="interior" [(ngModel)]="interior" name="interior" class="form-control">
+              <option>Виберіть салон...</option>
+              <option>Алькантара</option>
+              <option>Текстиль</option>
+              <option>Комбінований</option>
+              <option>Не важливо</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="interiorColor">Колір cалону *</label>
+            <select id="interiorColor" [(ngModel)]="interiorColor" name="interiorColor" class="form-control">
+              <option>Виберіть колір салону...</option>
+              <option>Світлий</option>
+              <option>Темний</option>
+              <option>Не важливо</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="formBodyRight">
+          <div class="form-group">
+            <label class="formLabel" for="formGroupEmailInput">Email *</label>
+            <input type="text" class="form-control" [(ngModel)]="email" name="email" id="formGroupEmailInput"
+              placeholder="Введіть email...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="formGroupViberInput">Viber / Telegram </label>
+            <input type="text" class="form-control" [(ngModel)]="viber" name="viber" id="formGroupViberInput"
+              placeholder="Номер viber/telegram...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="engine">Об'єм двигуна *</label>
+            <input type="text" class="form-control" [(ngModel)]="engine" name="engine" id="engine" placeholder="1.6...">
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="fuel">Тип палива *</label>
+            <select id="fuel" [(ngModel)]="fuel" name="fuel" class="form-control">
+              <option>Виберіть тип палива...</option>
+              <option>Дизель</option>
+              <option>Бензин</option>
+              <option>Електро</option>
+              <option>Газ</option>
+              <option>Гібрид</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="transmission">Тип коробки *</label>
+            <select id="transmission" [(ngModel)]="transmission" name="transmission" class="form-control">
+              <option>Виберіть тип коробки передач...</option>
+              <option>Автоматична коробка</option>
+              <option>Механічна коробка</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="typeofbody">Тип кузова *</label>
+            <select [(ngModel)]="bodyType" name="bodyType" id="typeofbody" class="form-control">
+              <option>Виберіть тип кузова...</option>
+              <option>Седан</option>
+              <option>Універсал</option>
+              <option>Хетчбек</option>
+              <option>Кросовер</option>
+              <option>SUV</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="formLabel" for="textarea">Ваші побажання</label>
+            <div class="textArea">
+            <textarea [(ngModel)]="message" name="message" id="textarea" rows="10"></textarea>
+          </div>
+          </div>
+          <button class="btn btn-danger" type="submit">Відправити заявку</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

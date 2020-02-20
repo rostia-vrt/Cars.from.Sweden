@@ -1,0 +1,131 @@
+.footer {
+  width: 100%;
+  height: 100px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889152_background.png?alt=media&token=59ccefb0-736f-4414-91fd-c59fd8560c6b);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid darkslategray;
+}
+
+.footerMd {
+  width: 100%;
+  height: 50px;
+  color: darkslategray;
+}
+
+.footerInfo {
+  width: 100%;
+  height: 50px;
+}
+
+.footerText {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+.order {
+  font-family: 'Lobster', cursive;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 50%;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.footerMenu {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 15%;
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.footerMenu:hover {
+  font-size: 25px;
+}
+
+.orderText {
+  color: darkslategray;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.name {
+  border-radius: 5px;
+}
+
+.phNumber {
+  border-radius: 5px;
+}
+
+.send {
+  color: white;
+  padding: 0px 0px;
+}
+
+@media screen and (max-width:1040px) {
+
+    .footer{
+      height: 150px;
+    }
+    .footerInfo{
+      height: 115px;
+    }
+    .myForm{
+      display: flex;
+      flex-direction: column;
+    }
+    .order{
+      width: 40%;
+    }
+    .menu{
+      width: 60%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+    .send{
+      height: 15%;
+    }
+    .footerMenu{
+      padding: 0px 0px;
+      width: 40%;
+      font-size: 25px;
+    }
+    .footerMenu:hover{
+      text-decoration: underline;
+      text-decoration-color: darkslategray;
+    }
+    .orderText{
+      font-size: 25px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .menu{
+      display: none;
+    }
+    .order{
+      width: 100%;
+      justify-content: space-around;
+    }
+    .orderText{
+      font-size: 20px;
+    }
+    input{
+      height: 25px;
+    }
+    .send{
+      height: 20px;
+    }
+}

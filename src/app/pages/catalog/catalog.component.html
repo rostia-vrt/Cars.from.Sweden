@@ -1,0 +1,109 @@
+<div class="container d-flex justify-content-center">
+  <div class="carContainer">
+    <div class="info">
+      <p class="titleInfo text-danger">Тепер ви можете купити перевірений автомобіль прямо у нас</p><br>
+      <p class="titleText">Ми шукаємо, перевіряємо та купляємо популярні автомобілі в Швеції, для того щоб Ви могли без
+        лишніх
+        затрат часу, сил та грошей купити собі авто. Автомобілі знаходяться у нас і ми розкажемо всю детальну інформацію
+        про інтересуючий Вас автомобіль.<br>
+        Автомобілі та ціни Ви можете дивитись на сайті нижче. По питанням купівлі звертайтесь по наших
+        <a class="text-danger text-decoration-none" href="#" routerLink="/contacts">контактах</a>.<br>
+        Також Ви можете запропонувати свою ціну за конкретний автомобіль, тільки пропонуйте реальну ціну.</p>
+    </div>
+    <div class="cars">
+      <p class="carsTitle text-danger">Автомобілі в наявності</p>
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889150_audi-slaider1.jpg?alt=media&token=6337029b-9ada-4871-b05d-40de89f82fd4" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889150_audi-slaider2.jpg?alt=media&token=61ded7cf-8e72-4c5b-bd1a-34e7e0e8875e" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889151_audi-slaider3.jpg?alt=media&token=8747fe62-a290-4b9c-bd00-f5ab38a63e18" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="CarBox d-flex" *ngFor="let product of products; let i=index" data-toggle="modal"
+        data-target=".bd-example-modal-xl">
+        <img class="MainImg" src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889149_audi-catalog.jpg?alt=media&token=23ccb0f0-2144-4197-8bbc-d4c362b6d5aa" alt="">
+        <div class="CarInfoBox">
+          <p class="infoBoxTitle">{{product.title}}</p>
+          <div class="table d-flex">
+            <table class="first">
+              <tbody>
+                <tr class="category_body_style">
+                  <td class="option_first">Тип кузова:</td>
+                  <td class="spec">{{product.bodyType}}</td>
+                </tr>
+                <tr class="category_mileage">
+                  <td class="option_first">Пробіг:</td>
+                  <td class="spec">{{product.probig}}</td>
+                </tr>
+                <tr class="category_transmission">
+                  <td class="option_first">Коробка:</td>
+                  <td class="spec">{{product.korobka}}</td>
+                </tr>
+                <tr class="category_drivetrain">
+                  <td class="option_first">Трансмісія:</td>
+                  <td class="spec">{{product.transmision}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="second">
+              <tbody>
+                <tr class="category_engine">
+                  <td class="option_second">Двигун:</td>
+                  <td class="spec">{{product.engine}}</td>
+                </tr>
+                <tr class="category_body_color">
+                  <td class="option_second">Колір кузова:</td>
+                  <td class="spec">{{product.bodyColor}}</td>
+                </tr>
+                <tr class="category_interior">
+                  <td class="option_second">Інтер'єр:</td>
+                  <td class="spec">{{product.interior}}</td>
+                </tr>
+                <tr class="category_mpg">
+                  <td class="option_second">Розхід:</td>
+                  <td class="spec">{{product.consumption}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="price justify-content-md-end">
+              <span class="spanPrice">Ціна :</span>
+              <p class="money">{{product.price}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="priceNew">
+          <span class="spanPrice">Ціна :</span>
+          <p class="money">{{product.price}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="containerSoldCars d-flex justify-content-center">
+  <div class="SoldCarsBox">
+    <p class="soldCarsTitle text-danger">Продані автомобілі</p>
+    <hr style="color: white; border-color: white;">
+  </div>
+</div>

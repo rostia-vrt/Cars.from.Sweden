@@ -1,0 +1,21 @@
+<div class="footer d-flex flex-column ">
+  <div class="footerInfo d-flex">
+    <div class="order d-flex justify-content-md-between">
+      <p class="orderText">Ми вам зателефонуємо !</p>
+      <form class="myForm" action="" #form='ngForm' autocomplete="off" (submit)="onSubmit(form)">
+        <input class="name" [(ngModel)]="name" type="text" name="name" placeholder="Ім'я">
+        <input class="phNumber" type="text" [(ngModel)]="phoneNumber" name="phoneNumber" placeholder="Ваш телефон">
+        <button class="send btn btn-danger h-75" type="submit">Відправити</button>
+      </form>
+    </div>
+    <div class="menu">
+      <a class="footerMenu" href="#" routerLink="home">Головна</a>
+      <a class="footerMenu" href="#" routerLink="catalog">Каталог</a>
+      <a class="footerMenu" href="#" routerLink="about-us">Про нас</a>
+      <a class="footerMenu" href="#" routerLink="contacts">Контакти</a>
+    </div>
+  </div>
+  <div class="footerMd d-flex align-items-end justify-content-center">
+    <p class="footerText">© 2019 Cars.from.Sweden . All Rights Reserved</p>
+  </div>
+</div>

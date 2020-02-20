@@ -1,0 +1,24 @@
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ім'я</th>
+        <th scope="col">Номер тел</th>
+        <th scope="col">Email</th>
+        <th scope="col">Повідомлення</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients; let i=index">
+        <th>{{i+1}}</th>
+        <td>{{client.name}}</td>
+        <td>{{client.phoneNumber}}</td>
+        <td>{{client.email}}</td>
+        <td>{{client.message}}</td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="deleteClient(client.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

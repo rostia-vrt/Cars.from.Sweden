@@ -1,0 +1,58 @@
+<div class="container d-flex flex-column justify-content-center">
+  <div class="containerTop justify-content-lg-center">
+    <div class="containerLeft d-flex flex-column">
+      <p class="leftContUpTitle text-danger">Контактна Інформація</p>
+      <div class="contactInfo d-flex flex-column">
+        <div class="address">
+          <img class="imgBox" src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889146_addres.png?alt=media&token=3f30b83d-cef3-4b5f-80f2-af5a07ab5fb9" alt="">
+          <p class="contactText"><span>Address:</span> м.Львів Україна</p>
+        </div>
+        <div class="phoneNumber">
+          <img class="imgBox" src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889143_phone.png?alt=media&token=c683a1d5-7010-4264-a7c4-3731c1e9cd49" alt="">
+          <p class="contactText">+380672530647 Ростислав</p>
+        </div>
+        <div class="Email">
+          <img class="imgBox" src="https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889154_email.png?alt=media&token=6d28dd9e-8d0a-4ed8-ba94-f837401005fe" alt="">
+          <p class="contactText"><a class="text-danger"
+              href="mailto:cars.from.sweden@gmail.com">cars.from.sweden@gmail.com</a></p>
+        </div>
+      </div>
+      <p class="leftContBottomTitle text-danger">Години Роботи</p>
+      <div class="workTime">
+        <p class="timeText"><span class="spanText">Понеділок:</span>9:00 - 18:00</p>
+        <p class="timeText"><span class="spanText">Вівторок:</span>9:00 - 18:00</p>
+        <p class="timeText"><span class="spanText">Середа:</span>9:00 - 18:00</p>
+        <p class="timeText"><span class="spanText">Четвер:</span>9:00 - 18:00</p>
+        <p class="timeText"><span class="spanText">П'ятниця:</span>9:00 - 18:00</p>
+      </div>
+    </div>
+    <div class="containerRight d-flex flex-column">
+      <p class="rightContUpTitle">Ви можете написати нам</p>
+      <form action="" #form='ngForm' autocomplete="off" (submit)="onSubmit(form)">
+        <div class="form-group name d-flex flex-column">
+          <span class="text-danger spn">Ваше Ім'я *</span>
+          <input type="text" [(ngModel)]="name" name="name">
+        </div>
+        <div class="form-group phone d-flex flex-column">
+          <span class="text-danger spn">Контактний телефон *</span>
+          <input type="text" [(ngModel)]="phoneNumber" name="phoneNumber">
+        </div>
+        <div class="form-group email d-flex flex-column">
+          <span class="text-danger spn">Email *</span>
+          <input type="text" [(ngModel)]="email" name="email">
+        </div>
+        <div class="form-group areaText d-flex flex-column">
+          <span class="text-danger spn">Повідомлення *</span>
+          <textarea name="" id="" cols="30" rows="10" [(ngModel)]="message" name="message"></textarea>
+        </div>
+        <button class="btn btn-danger" type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+  <div class="bottomContainer d-flex justify-content-center">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1286.862458439593!2d24.051838353170183!3d49.82448738693831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a38393a937a953!2z0JHRg9C00ZbQstC10LvRjNC90LjQug!5e0!3m2!1suk!2sua!4v1572866120602!5m2!1suk!2sua"
+      width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+      style="box-shadow: 0 0 15px lightgray;"></iframe>
+  </div>
+</div>

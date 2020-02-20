@@ -1,0 +1,338 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid darkslategray;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889152_background.png?alt=media&token=59ccefb0-736f-4414-91fd-c59fd8560c6b);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.logo {
+  width: 25%;
+  font-family: 'Lobster', cursive;
+  color: darkslategray;
+  text-align: center;
+}
+
+.cars {
+  height: 50%;
+  font-size: 35px;
+}
+
+.fromSweden {
+  height: 50%;
+  font-size: 25px;
+}
+
+.contacts {
+  display: flex;
+  width: 25%;
+}
+
+.nMenu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 25px;
+}
+
+.nMenuItem {
+  color: darkslategray;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nMenuItem:hover {
+  text-decoration: underline;
+}
+
+.navik {
+  display: none;
+}
+
+.carouselLabel {
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.textLabel {
+  font-size: 35px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.social {
+  margin-left: 30px;
+  width: 15%;
+}
+
+.numbers {
+  display: flex;
+  padding-top: 10px;
+  width: 85%;
+}
+
+.firstNumber {
+  height: 50%;
+  color: darkslategray;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.secondNumber {
+  height: 50%;
+  color: darkslategray;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.facebook {
+  margin-top: 5px;
+  width: 34px;
+  height: 34px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889155_facebook.png?alt=media&token=da78ac35-2865-4895-a4aa-f5ba907b0f97)no-repeat;
+}
+
+.instagram {
+  margin-top: 2px;
+  width: 34px;
+  height: 34px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889141_instagram.png?alt=media&token=e291f7a1-5861-4857-bda3-e718b7ede800)no-repeat;
+}
+
+.orderBox {
+  width: 100%;
+  height: 80px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889152_background.png?alt=media&token=59ccefb0-736f-4414-91fd-c59fd8560c6b);
+  border-bottom: 2px solid darkslategray;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mnBox {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.orderText {
+  font-size: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.orderButton {
+  width: 200px;
+  height: 40px;
+  text-decoration: none;
+  padding-top: 3px;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+.menu {
+  display: none;
+  text-align: right;
+}
+
+.menu__icon {
+ display: none;
+ width: 45px;
+ height: 35px;
+ position: relative;
+ cursor: pointer;
+}
+
+.menu__icon span {
+display: block;
+position: absolute;
+height: 6px;
+width: 100%;
+background: #085c5f;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+top: 26px;
+}
+
+.menu__links-item {
+  display: inline-block;
+  color: #333333;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__links-item:hover {
+  text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+display: block;  
+}
+
+.menu__icon{
+  display: inline-block;
+}
+
+.menu__links {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 78px;
+  background-color: rgba(187, 195, 195, 0.8);
+  z-index: 1000;
+  overflow: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu__links-item {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width:1040px) {
+
+  .firstNumber {
+    font-size: 15px;
+  }
+
+  .secondNumber {
+    font-size: 15px;
+  }
+
+  .orderText {
+    font-size: 25px;
+  }
+
+  .orderBox {
+    height: 60px;
+  }
+
+  .orderButton {
+    font-size: 16px;
+    height: 25px;
+    padding: 0px 0px;
+  }
+
+  .carouselLabel {
+    font-size: 35px;
+  }
+
+  .textLabel {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:840px) {
+
+  .logo {
+    width: 32%;
+  }
+
+  .numbers {
+    display: none;
+  }
+
+  .contacts {
+    width: 12%;
+  }
+
+  .carouselLabel {
+    font-size: 25px;
+  }
+
+  .textLabel {
+    font-size: 20px;
+  }
+
+  .nMenu {
+    width: 60%;
+  }
+
+  .nMenuItem {
+    font-size: 20px;
+  }
+
+  .cars {
+    font-size: 30px;
+  }
+
+  .fromSweden {
+    font-size: 22px;
+  }
+
+  .orderText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .nMenuItem {
+    display: none;
+  }
+   .nMenu{
+     width: 50%;
+     justify-content: flex-end;
+   }
+  .menu{
+    display: block;
+  }
+  .social {
+    margin-left: 0px;
+  }
+
+  .contacts{
+    width: 10%;
+  }
+
+
+}

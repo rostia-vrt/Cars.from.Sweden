@@ -1,0 +1,163 @@
+.container {
+  width: 100%;
+  min-height: 600px;
+}
+
+.carContainer {
+  width: 90%;
+  min-height: 600px;
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.info {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.titleInfo {
+  text-align: center;
+  font-size: 30px;
+}
+
+.titleText {
+  font-size: 20px;
+}
+
+.cars {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 450px;
+}
+
+.carsTitle {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.CarBox {
+  width: 100%;
+  min-height: 250px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px darkslategray;
+  margin-top: 60px;
+}
+
+.MainImg {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.CarInfoBox {
+  width: 100%;
+  min-height: 225px;
+}
+
+.infoBoxTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  min-height: 225px;
+}
+
+.option_first {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.option_second {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.spec {
+  font-size: 15px;
+}
+
+.price {
+  width: 20%;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceNew {
+  display: none;
+}
+
+.spanPrice {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.money {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: end;
+}
+
+.containerSoldCars {
+  width: 100%;
+  min-height: 600px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/cars-from-sweden.appspot.com/o/images%2F1581423889152_background.png?alt=media&token=59ccefb0-736f-4414-91fd-c59fd8560c6b);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.SoldCarsBox {
+  width: 1300px;
+  min-height: 600px;
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.soldCarsTitle {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:1040px) {
+
+  .CarBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MainImg {
+    max-width: 300px;
+  }
+
+  .CarInfoBox {
+    width: 85%;
+  }
+
+  .infoBoxTitle {
+    margin-top: 20px;
+  }
+
+  .price {
+    display: none;
+  }
+
+  .priceNew {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:540px) {
+
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  min-height: 700px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.upBox {
+  width: 1300px;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.titleUpBox {
+  margin-top: 80px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 20px;
+}
+
+ul {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  list-style-type: disc;
+}
+
+.underImg {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.container2 {
+  width: 100%;
+  min-height: 600px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.downBox {
+  width: 1300px;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.titleDownBox {
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+.bottomContainer {
+  width: 100%;
+  height: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  width: 85%;
+  height: 400px;
+}
+
+.carsfromsweden{
+  font-size: 40px;
+}
+
+@media screen and (max-width:540px) {
+
+    .carsfromsweden{
+      font-size: 25px;
+    }
+    .titleUpBox{
+      font-size: 25px;
+    }
+    .titleDownBox{
+      font-size: 25px;
+    }
+
+}

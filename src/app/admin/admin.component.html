@@ -1,0 +1,16 @@
+<div class="container-fluid mt-2 main">
+    <div class="row">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link" routerLink="admin-clients" routerLinkActive="active">Clients</a>
+          <a class="nav-link" routerLink="admin-products" routerLinkActive="active">Products</a>
+          <a class="nav-link" routerLink="admin-orders" routerLinkActive="active">Orders</a>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="tab-content">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
